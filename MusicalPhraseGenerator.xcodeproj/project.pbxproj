@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		936DA93C262212FE00FC986B /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936DA93B262212FE00FC986B /* Score.swift */; };
+		93BD072726067BCA00AE83A4 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD072626067BCA00AE83A4 /* Note.swift */; };
+		93BD072C26067CAC00AE83A4 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD072B26067CAC00AE83A4 /* Pitch.swift */; };
+		93BD073126067D0600AE83A4 /* Accidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD073026067D0600AE83A4 /* Accidental.swift */; };
+		93BD073426067D2F00AE83A4 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD073326067D2F00AE83A4 /* Duration.swift */; };
+		93BD073726067E3300AE83A4 /* Stave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD073626067E3300AE83A4 /* Stave.swift */; };
+		93BD073A2606857D00AE83A4 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BD07392606857D00AE83A4 /* Clef.swift */; };
 		93F9246525E18B9D003D738C /* MusicalPhraseGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F9246425E18B9D003D738C /* MusicalPhraseGeneratorApp.swift */; };
-		93F9246725E18B9D003D738C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F9246625E18B9D003D738C /* ContentView.swift */; };
+		93F9246725E18B9D003D738C /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F9246625E18B9D003D738C /* ScoreView.swift */; };
 		93F9246925E18BA1003D738C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F9246825E18BA1003D738C /* Assets.xcassets */; };
 		93F9246C25E18BA1003D738C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F9246B25E18BA1003D738C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		936DA93B262212FE00FC986B /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		93BD072626067BCA00AE83A4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		93BD072B26067CAC00AE83A4 /* Pitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
+		93BD073026067D0600AE83A4 /* Accidental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accidental.swift; sourceTree = "<group>"; };
+		93BD073326067D2F00AE83A4 /* Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		93BD073626067E3300AE83A4 /* Stave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stave.swift; sourceTree = "<group>"; };
+		93BD07392606857D00AE83A4 /* Clef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clef.swift; sourceTree = "<group>"; };
 		93F9246125E18B9D003D738C /* MusicalPhraseGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicalPhraseGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F9246425E18B9D003D738C /* MusicalPhraseGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicalPhraseGeneratorApp.swift; sourceTree = "<group>"; };
-		93F9246625E18B9D003D738C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93F9246625E18B9D003D738C /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		93F9246825E18BA1003D738C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F9246B25E18BA1003D738C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93F9246D25E18BA1003D738C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +47,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93BD072926067BD300AE83A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				936DA93B262212FE00FC986B /* Score.swift */,
+				93BD073626067E3300AE83A4 /* Stave.swift */,
+				93BD07392606857D00AE83A4 /* Clef.swift */,
+				93BD072F26067CC000AE83A4 /* Note */,
+				93F9246425E18B9D003D738C /* MusicalPhraseGeneratorApp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93BD072A26067BE000AE83A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93F9246625E18B9D003D738C /* ScoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93BD072F26067CC000AE83A4 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				93BD072626067BCA00AE83A4 /* Note.swift */,
+				93BD072B26067CAC00AE83A4 /* Pitch.swift */,
+				93BD073026067D0600AE83A4 /* Accidental.swift */,
+				93BD073326067D2F00AE83A4 /* Duration.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
 		93F9245825E18B9D003D738C = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +97,8 @@
 		93F9246325E18B9D003D738C /* MusicalPhraseGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				93F9246425E18B9D003D738C /* MusicalPhraseGeneratorApp.swift */,
-				93F9246625E18B9D003D738C /* ContentView.swift */,
+				93BD072A26067BE000AE83A4 /* View */,
+				93BD072926067BD300AE83A4 /* Model */,
 				93F9246825E18BA1003D738C /* Assets.xcassets */,
 				93F9246D25E18BA1003D738C /* Info.plist */,
 				93F9246A25E18BA1003D738C /* Preview Content */,
@@ -138,8 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F9246725E18B9D003D738C /* ContentView.swift in Sources */,
+				93F9246725E18B9D003D738C /* ScoreView.swift in Sources */,
 				93F9246525E18B9D003D738C /* MusicalPhraseGeneratorApp.swift in Sources */,
+				93BD073726067E3300AE83A4 /* Stave.swift in Sources */,
+				93BD073126067D0600AE83A4 /* Accidental.swift in Sources */,
+				93BD073426067D2F00AE83A4 /* Duration.swift in Sources */,
+				93BD072C26067CAC00AE83A4 /* Pitch.swift in Sources */,
+				93BD073A2606857D00AE83A4 /* Clef.swift in Sources */,
+				936DA93C262212FE00FC986B /* Score.swift in Sources */,
+				93BD072726067BCA00AE83A4 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
